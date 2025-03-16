@@ -98,9 +98,9 @@ agent.addCapability({
       const apiKey = await getUserExaApiKey(action.workspace.id);
       
       if (apiKey === DEFAULT_EXA_API_KEY && DEFAULT_EXA_API_KEY === '') {
-        return "No Exa API key is configured for this workspace. Please use the 'setExaApiKey' capability to set your API key. You can get a free API key from https://dashboard.exa.ai/api-keys.";
+        return "No Exa API key is configured for this workspace. Please use the 'setExaApiKey' capability to set your API key in the format 'EXA_API_KEY=your_exa_api_key'. You can get a free API key from https://dashboard.exa.ai/api-keys.";
       } else if (apiKey === DEFAULT_EXA_API_KEY) {
-        return "Using the default Exa API key. For personal usage, please set your own API key using the 'setExaApiKey' capability. You can get a free API key from https://dashboard.exa.ai/api-keys.";
+        return "Using the default Exa API key. For personal usage, please set your own API key using the 'setExaApiKey' capability in the format 'EXA_API_KEY=your_exa_api_key'. You can get a free API key from https://dashboard.exa.ai/api-keys.";
       } else {
         return "An Exa API key is configured for this workspace. You're ready to use the search capabilities.";
       }
