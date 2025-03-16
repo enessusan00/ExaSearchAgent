@@ -1,0 +1,8 @@
+version: 2
+tunnels:
+  proje1:
+    proto: http
+    addr: 7378
+  proje2:
+    proto: http
+    addr: 3000
